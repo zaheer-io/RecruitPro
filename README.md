@@ -75,12 +75,6 @@ These tools were used to speed up development, generate base layouts, and refine
 
 ## Example Prompt Used
 
-## Example Prompt Used
-
-### Student Recruitment Dashboard — Project Plan
-
-#### Project Goal
-
 Build a modern, clean web dashboard for managing student recruitment using:
 
 * HTML

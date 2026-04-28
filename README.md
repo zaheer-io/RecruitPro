@@ -75,16 +75,24 @@ These tools were used to speed up development, generate base layouts, and refine
 
 ## Example Prompt Used
 
+## Example Prompt Used
+
+### Student Recruitment Dashboard — Project Plan
+
+#### Project Goal
+
 Build a modern, clean web dashboard for managing student recruitment using:
 
-HTML
-CSS / Bootstrap
-JavaScript
-localStorage
+* HTML
+* CSS / Bootstrap
+* JavaScript
+* localStorage
 
 No backend or server required.
 
-Core Concept:
+---
+
+#### Core Concept
 
 This project is a mini CRM dashboard where users can:
 
@@ -92,10 +100,126 @@ This project is a mini CRM dashboard where users can:
 * View all students
 * Filter/search students
 
-Application Type:
+---
+
+#### Application Type
 
 * Single Page Application (SPA)
-* Uses dynamic UI switching without page reload
+* Uses dynamic UI switching (no page reloads)
+
+---
+
+#### UI Design Overview
+
+**1. Header (Top Navbar)**
+
+* Title: Student Recruitment Dashboard
+* Clean horizontal bar
+* Optional: profile icon / logout placeholder
+
+**2. Sidebar (Navigation Menu)**
+
+* Vertical sidebar on the left with options:
+
+  * Add Student
+  * View Students
+* Allows switching between sections without reloading
+
+**3. Main Content Area**
+
+* Changes dynamically based on sidebar selection
+
+---
+
+#### Section 1: Add Student
+
+**Features:**
+
+* Form inside a card layout
+* Input fields:
+
+  * Name (text)
+  * Email (email)
+  * Course Interest (dropdown)
+  * Status (New / Contacted / Enrolled)
+
+**Behavior:**
+
+* Validate inputs
+* Create student object
+* Save to localStorage
+* Clear form
+* Show success feedback
+
+---
+
+#### Section 2: View Students
+
+**Search & Filter**
+
+* Search by name or course
+* Dropdown filter for course interest
+
+**Students Table**
+
+Columns:
+
+* Name
+* Email
+* Course Interest
+* Status
+
+**UI Enhancements:**
+
+* Clean table layout
+* Alternating row colors
+* Status badges:
+
+  * New → Blue
+  * Contacted → Orange
+  * Enrolled → Green
+
+---
+
+#### Data Structure
+
+Store all students as an array:
+
+```json
+[
+  {
+    "name": "Rahul",
+    "email": "rahul@example.com",
+    "course_interest": "Flutter",
+    "status": "New"
+  }
+]
+```
+
+---
+
+#### User Flow
+
+* Open dashboard
+* Click Add Student
+* Fill form → Submit
+* Data saved in localStorage
+* Go to View Students
+* See list instantly
+* Use search/filter
+* Refresh → data persists
+
+---
+
+#### File Structure
+
+```
+recruit_dashboard_frontend/
+    index.html
+    styles.css
+    script.js
+```
+
 
 ## Manual Changes and Fixes
 
